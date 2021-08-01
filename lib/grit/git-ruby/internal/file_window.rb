@@ -33,7 +33,7 @@ module Grit
           when Range
             offset = idx.first
             len = idx.last - idx.first + idx.exclude_end? ? 0 : 1
-          when Fixnum
+          when Integer
             offset = idx
             len = nil
           when Array
